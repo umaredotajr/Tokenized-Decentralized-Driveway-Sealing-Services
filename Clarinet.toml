@@ -1,0 +1,24 @@
+[project]
+name = 'Tokenized-Decentralized-Driveway-Sealing-Services'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.application-verification]
+path = 'contracts/application-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.longevity-tracking]
+path = 'contracts/longevity-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
